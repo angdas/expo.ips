@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Form</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>      
+    <ion-item>
+      <ion-input type="text" placeholder="Customer Name" [(ngModel)]="customerName"></ion-input>
+    </ion-item>  
+    <ion-item>
+      <ion-input type="text" placeholder="Job Title" [(ngModel)]="customerName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="Company Name" [(ngModel)]="companyName"></ion-input>
+    </ion-item> 
+    <ion-item>
+      <ion-input type="text" placeholder="Country" [(ngModel)]="country"></ion-input>
+    </ion-item> 
+    <ion-item>
+      <ion-input type="text" placeholder="Full Address" [(ngModel)]="address"></ion-input>
+    </ion-item> 
+    <ion-item>
+      <ion-input type="text" placeholder="Telephone No" [(ngModel)]="telephone"></ion-input>
+    </ion-item>  
+  </ion-list>
+  <button block ion-button>Save</button>
+</ion-content>
