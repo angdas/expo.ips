@@ -1,3 +1,11 @@
-page-form {
+.invalid {
+    border: 1px solid #ea6153;
+}
 
+.input-field {
+    border-bottom: 1px solid red !important;
+    box-shadow: 0 1px 0 0 red !important
+  }
+
+page-form {
 }

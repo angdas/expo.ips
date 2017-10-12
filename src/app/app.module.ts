@@ -12,6 +12,8 @@ import { ApiProvider } from '../providers/api/api';
 
 import { IonicStorageModule } from '@ionic/storage';
 import { SettingsPage } from '../pages/settings/settings';
+import { HttpModule } from '@angular/http';
+import { ImagePicker } from '@ionic-native/image-picker';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { SettingsPage } from '../pages/settings/settings';
     SettingsPage,
   ],
   providers: [
+    HttpModule,
+    ImagePicker,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
